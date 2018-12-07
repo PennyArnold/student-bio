@@ -1,0 +1,99 @@
+.container {
+    width: 100%;
+}
+
+/*this is the main header box and it doesn't change between pages*/
+.hbox {
+    width: 960px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #ffffff;
+    color: #4aaaa5;
+    margin-bottom: 0%;
+    
+}
+/*headings*/
+h1,h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/*the name and links are in the hbox and is my name*/
+.name {
+    float: left;
+    background-color:  #4aaaa5;
+    color:  #ffffff;
+    margin-left: 0px;
+    margin-bottom: 0%;
+}
+
+:any-link {
+    text-decoration: none;
+}
+
+.links {
+    float: right;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: larger;
+    margin: 10px;
+    text-decoration-line: none; 
+}
+/*this clears the float*/
+.hbox::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+/*this is the main body box and it goes 100% width*/
+.bbox {
+    background-color: #ddd;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-top: 0%;
+    border-top: 5px #777777 solid;  
+    border-bottom: 5px #777777 solid;    
+ }
+/*this is the surrounding box for content */
+.contentbox {
+    background-color: #ffffff;
+    width: 960px;
+    padding: 10px;
+    margin: auto;
+}
+/*this styles About Me*/
+.contheader {
+    color: #4aaaa5;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/*this is the content body box and contains the image and text*/
+.contbody {
+    line-height: 150%;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:#777777;
+}
+/*this styles the image*/
+#image {
+    float: left;
+    margin-right: 20px;
+}
+/*this styles the text*/
+#text {
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+    padding-right: 5px;    
+}
+
+/*this styles the footer and should not change*/
+footer {
+    clear: both;
+    overflow: auto;
+    color: #777777;
+    text-align: center;
+    background-color: #4aaaa5;
+    padding-top: 50px;
+    }
+/*begin styling for portfolio*/    
+/*this formats the images*/
+
