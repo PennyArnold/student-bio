@@ -24,6 +24,8 @@ h1,h2 {
     color:  #ffffff;
     margin-left: 0px;
     margin-bottom: 0%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 :any-link {
@@ -59,7 +61,7 @@ h1,h2 {
     padding: 10px;
     margin: auto;
 }
-/*this styles About Me*/
+/*this styles Portfolio*/
 .contheader {
     color: #4aaaa5;
     margin-right: 20px;
@@ -72,11 +74,28 @@ h1,h2 {
     margin-right: 20px;
     color:#777777;
 }
-/*this styles the image*/
-#image {
-    float: left;
-    margin-right: 20px;
+/*this styles the images*/
+img {
+    height: 200px;
+    width: 300px;
+    float: left; 
+    padding: 20px;   
 }
+
+/*this lays the text over the image*/
+.family {
+    position: relative;
+    text-align: center;
+    color:black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*this styles the text*/
 #text {
     width: 100%;
