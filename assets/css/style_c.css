@@ -5,7 +5,7 @@
 /*this is the main header box and it doesn't change between pages*/
 .hbox {
     width: 960px;
-    margin-left: 310px;
+    margin-left: 300px;
     margin-right: 300px;
     background-color: #ffffff;
     color: #4aaaa5;
@@ -64,8 +64,8 @@ h1,h2 {
 /*this styles Contact*/
 .contheader {
     color: #4aaaa5;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 22px;
+    margin-left: 18px;
     border-bottom: 5px #ddd solid;
 }
 /*this is the content body box and contains the form and text*/
