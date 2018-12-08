@@ -5,7 +5,7 @@
 /*this is the main header box and it doesn't change between pages*/
 .hbox {
     width: 960px;
-    margin-left: 300px;
+    margin-left: 310px;
     margin-right: 300px;
     background-color: #ffffff;
     color: #4aaaa5;
@@ -24,6 +24,8 @@ h1,h2 {
     color:  #ffffff;
     margin-left: 0px;
     margin-bottom: 0%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 :any-link {
@@ -59,33 +61,50 @@ h1,h2 {
     padding: 10px;
     margin: auto;
 }
-/*this styles About Me*/
+/*this styles Contact*/
 .contheader {
     color: #4aaaa5;
     margin-right: 20px;
     margin-left: 20px;
     border-bottom: 5px #ddd solid;
 }
-/*this is the content body box and contains the image and text*/
+/*this is the content body box and contains the form and text*/
 .contbody {
-    line-height: 150%;
     margin-left: 20px;
     margin-right: 20px;
     color:#777777;
 }
-/*this styles the image*/
-#image {
-    float: left;
-    margin-right: 20px;
-}
-/*this styles the text*/
-#text {
+input[type=text] {
     width: 100%;
-    float: left;
-    margin-right: 10px;
-    padding-right: 5px;    
+    padding: 12px 20px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+input[type=mtext] {
+    width: 100%;
+    padding: 200px 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-size: larger;
+  background-color: #4aaaa5;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*this styles the footer and should not change*/
 footer {
     clear: both;
@@ -96,7 +115,7 @@ footer {
     padding-top: 50px;
     }
 
-}
+
 
 
 

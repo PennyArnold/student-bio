@@ -5,30 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Penny Arnold</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style_c.css"/>
     <script src="main.js"></script>
 </head>
-<body>
-    <h1>Contact</h1>
+<!--this holds everything you see-->
+<body class="container">
+    <!--this is the header box and it shouldn't change-->
+    <div class="hbox">
+        <header class="name">
+            <h1>Penny Arnold</h1> 
+        </header> 
+        
+        <div class="links">
+                 <a href="index.html">About</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="contact.html">Contact</a>
+        </div>
+    </div>
 
-    <h2>Name</h2>
-
-    <form action="/action_page.php">
-        <input name="name" type="text">
-        <br><br>
-            <h2>Email</h2>
-        <input email="email" type="text">
-            <h2>Message</h2>
-        <input message="message" type="text">
-        <br><br>
-        <input type="submit">
-      </form>
-
-    
-    
-
-
-
-    
+    <!--this is the body box which is the same and frames the content for each page-->
+    <div class="bbox">
+             <!--this is the smaller main box container in the body box-->
+             <div class="contentbox">
+                 <!--this goes the entire width of the smaller box container-->
+                 <h1 class="contheader">Contact</h1>
+                 
+                <!--this is the next box within in the content box-->
+                <div class="contbody">
+                    <form action="/action_page.php">
+                            <p>Name</p>
+                        <input name="name" type="text">
+                        <br>
+                            <p>Email</p>
+                        <input email="email" type="text">
+                            <p>Message</p>
+                        <input message="message" type="mtext">
+                        <br>
+                        <input type="submit">
+                    </form>
+                </div>
+    <!--this is the footer and it stays the same for each page-->
+    <footer>Copyright@</footer>
 </body>
 </html>
