@@ -1,17 +1,16 @@
 .container {
     width: 100%;
+    min-width: 576px 
 }
 
 /*this is the main header box and it doesn't change between pages*/
 .hbox {
     width: 960px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: auto;
     background-color: #ffffff;
     color: #4aaaa5;
     margin-bottom: 0%;
-    
-}
+  }
 /*headings*/
 h1,h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -24,19 +23,25 @@ h1,h2 {
     color:  #ffffff;
     margin-left: 0px;
     margin-bottom: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 :any-link {
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .links {
     float: right;
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: larger;
+    font-size: large;
     margin: 10px;
-    text-decoration-line: none; 
+    padding-left: 10px;
+    padding-right: 10px;
+ 
 }
 /*this clears the float*/
 .hbox::after {
@@ -90,13 +95,76 @@ h1,h2 {
 footer {
     clear: both;
     overflow: auto;
-    color: #777777;
+    color: white;
     text-align: center;
     background-color: #4aaaa5;
     padding-top: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
     }
-
+/*MEDIA QUERIES*/
+@media (max-width: 750px) {
+.hbox {
+    width: 90%;
+    margin: 10px;
+    height: 200px;
+    min-width: 0;
+    padding-right: 5px;
+   }  
+.contentbox {
+   min-width: 0; 
+   width: 745px;
+   }
+.contheader {
+    margin: 0;
+    padding: 0;
 }
-
+.contbody {
+    width: 745;
+    margin-right: 5px !important;
+}
+.text {
+    width: 745;
+    margin-right: 5px;
+}
+.bbox {
+    width: 745x;
+    margin-right: 5px;
+}
+     
+}
+/*smaller devices*/
+@media (max-width: 400px) {
+    .hbox {
+        width: 350px;
+        margin: 10px;
+        height: 200px;
+        min-width: 0;
+        padding-right: 5px;
+       }  
+    .contentbox {
+       min-width: 0; 
+       width: 350px;
+       padding-right: 5px !important;
+       }
+    .contheader {
+        margin: 0;
+        padding: 0;
+    }
+    .contbody {
+        width: 350px;
+        margin-right: 5px !important;
+    }
+    .text {
+        width: 350px;
+        margin-right: 5px;
+    }
+    .bbox {
+        width: 350px;
+        margin-right: 5px;
+    }
+         
+    } 
 
 

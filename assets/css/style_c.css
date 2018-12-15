@@ -30,6 +30,8 @@ h1,h2 {
 
 :any-link {
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .links {
@@ -109,13 +111,76 @@ input[type=submit] {
 footer {
     clear: both;
     overflow: auto;
-    color: #777777;
+    color: white;
     text-align: center;
     background-color: #4aaaa5;
     padding-top: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    width: 100%;
+}
+/*MEDIA QUERIES*/
+@media (max-width: 750px) {
+    .hbox {
+        width: 90%;
+        margin: 10px;
+        height: 200px;
+        min-width: 0;
+        padding-right: 5px;
+       }  
+    .contentbox {
+       min-width: 0; 
+       width: 745px;
+       }
+    .contheader {
+        margin: 0;
+        padding: 0;
     }
-
-
+    .contbody {
+        width: 745;
+        margin: 5px;
+    }
+    .bbox {
+        width: 745px;
+        margin-right: 5px;
+    }
+    .form1 {
+        padding-right: 5px;
+    }
+ }
+         
+    
+    /*smaller devices*/
+    @media (max-width: 400px) {
+        .hbox {
+            width: 350px;
+            margin: 10px;
+            height: 200px;
+            min-width: 0;
+            padding-right: 5px;
+           }  
+        .contentbox {
+           min-width: 0; 
+           width: 350px;
+           }
+        .contheader {
+            margin: 0;
+            padding: 0;
+        }
+        .contbody {
+            width: 350px;
+            margin-right: 5px;
+        }
+        .bbox {
+            width: 350px;
+            margin-right: 5px;
+        }
+             
+    } 
+    
+    
+    
 
 
 
