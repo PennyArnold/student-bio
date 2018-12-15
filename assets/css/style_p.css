@@ -119,68 +119,76 @@ footer {
     padding-top: 50px;
     }
 /*MEDIA QUERIES*/
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
     .hbox {
         width: 90%;
         margin: 10px;
-        height: 200px;
+        height: 150%;
         min-width: 0;
         padding-right: 5px;
        }  
     .contentbox {
        min-width: 0; 
-       width: 745px;
-       }
+       width: 90%;
+        }
     .contheader {
         margin: 0;
         padding: 0;
     }
     .contbody {
-        width: 745;
-        margin-right: 5px;
+        width: 90%;
+        margin-right: 5px !important;
     }
     .text {
-        width: 745;
-        margin-right: 5px;
+        width: 90%;
+        margin: 5px;
+    }
+    .text-block {
+        padding-left: 10%;
+        margin-left: 10%;
     }
     .bbox {
-        width: 7745x;
-        margin-right: 5px;
+        width: 90%;
+        margin: 10%;
     }
          
     }
     /*smaller devices*/
     @media (max-width: 400px) {
+        .container {
+            width: 100%;
+        }
         .hbox {
-            width: 350px;
+            width: 90%;
             margin: 10px;
-            height: 200px;
+            height: 150%;
             min-width: 0;
             padding-right: 5px;
            }  
         .contentbox {
-           min-width: 0; 
-           width: 350px;
-           }
+           width: 90%;
+                  }
         .contheader {
             margin: 0;
             padding: 0;
         }
         .contbody {
-            width: 350px;
-            margin-right: 5px;
+            width: 90%;
+            margin-right: 5px !important;
         }
         .text {
-            width: 350px;
+            width: 90%;
             margin-right: 5px;
         }
         .bbox {
-            width: 350px;
+            width: 90%;
             margin-right: 5px;
         }
-             
+           
         } 
     
     
     
-
